@@ -1,0 +1,39 @@
+{
+  "name": "loopback-appid",
+  "version": "1.0.0",
+  "description": "Loopback authentication component for IBM App ID",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "loopback",
+    "component",
+    "appid"
+  ],
+  "files": [
+    "/dist"
+  ],
+  "author": "vanstaub@gmail.com",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/van-ibm/loopback-appid.git"
+  },
+  "dependencies": {
+    "@loopback/authentication": "^2.1.10",
+    "@loopback/authentication-passport": "^0.1.0",
+    "@loopback/core": "^1.9.3",
+    "@loopback/rest": "^1.17.0",
+    "dotenv": "^8.1.0",
+    "ibmcloud-appid": "^6.0.0",
+    "log4js": "^5.1.0",
+    "passport-mock-strategy": "^2.0.0"
+  },
+  "devDependencies": {
+    "@loopback/build": "^2.0.7",
+    "typescript": "^3.5.3"
+  }
+}
