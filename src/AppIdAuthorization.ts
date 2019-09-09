@@ -67,6 +67,10 @@ export class AppIdAuthorization {
     throw new HttpErrors.Unauthorized(msg);
   }
 
+  getEmail() {
+    return this.user.email;
+  }
+
   getIdentity(provider = 'cloud_directory'): string {
     const { identities } = this.user;
 
