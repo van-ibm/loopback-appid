@@ -10,9 +10,11 @@ const logger = getLogger('AppIdComponent');
 export class AppIdAuthorization {
 
   constructor(
-    @inject(AuthenticationBindings.CURRENT_USER) private user: AppIdUser,
+    @inject(AuthenticationBindings.CURRENT_USER, { optional: true }) private user: AppIdUser,
   ) {
-    logger.debug(`Authorization configured for user ${JSON.stringify(user)}`);
+    if (user) {
+      logger.debug(`Authorization configured for user ${JSON.stringify(user)}`);
+    }
   }
 
   authorizeByEmail(value: string | string[] | undefined, model?: any) {
