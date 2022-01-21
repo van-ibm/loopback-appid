@@ -30,7 +30,7 @@
     "@loopback/rest": "^1.17.0",
     "dotenv": "^8.1.0",
     "ibmcloud-appid": "^6.0.0",
-    "log4js": "^5.1.0",
+    "log4js": "^6.4.0",
     "passport-mock-strategy": "^2.0.0"
   },
   "devDependencies": {
